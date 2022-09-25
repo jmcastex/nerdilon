@@ -417,3 +417,60 @@ body{
         object-position: 0 70%;
     }
 }
+
+.login .contenedor-login{
+    display: flex;
+}
+
+.register .contenedor-register{
+    display: flex;
+}
+
+div.contenedor-register, .contenedor-login{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a5;
+    z-index: 100;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 350px;
+    margin: 20px auto;
+    border: 1px solid #DAB88B;
+    padding: 20px;
+    border-radius: 5px;
+    background: linear-gradient(#997a52, #ccc);
+}
+
+form [type="submit"]{
+    margin-top: 20px;
+    width: 100px;
+    background-color: #DAB88B;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul li button{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+nav ul li button:hover{
+    background-color: #ccc;
+}
+
+form [type="submit"]:hover{
+    background-color: #997a52;
+}

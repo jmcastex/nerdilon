@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="https://kit.fontawesome.com/495bd4c78d.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script defer src="../js/main.js"></script>
+    <title>Nerdilon</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <div class="padre__tienda">
+        <header class="header">
+            <div class="header_logo animate__animated animate__bounceIn">
+                <a href="#"><img src="../resources/images/logofull.jpg" alt="" width="80px"></a>
+            </div>
+
+            <button class="header__button">
+                <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__li"><a href="../index.html" class="header__a">INICIO</a></li>
+                    <li class="header__li"><a href="tienda.html" class="header__a">TIENDA</a></li>
+                    <li class="header__li"><a href="./nosotros.html" class="header__a">NOSOTROS</a></li>
+                    <li class="header__li"><a href="./contacto.html" class="header__a">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="form">
+            <button id="login">Iniciar sesion</button>
+            <button id="register">Registrarte</button>
+
+            <div class="contenedor-register">
+                <form class="form-register" action="">
+                    <label for="apellido">Apellido
+                    </label>
+                    <input type="text" id="apellido">
+                    <label for="nombre">Nombre
+                    </label>
+                    <input type="text" id="nombre">
+                    <label for="direccion">Direccion
+                    </label>
+                    <input type="text" id="direccion">
+                    <label for="telefono">Telefono
+                    </label>
+                    <input type="number" id="telefono">
+                    <label for="email">E-Mail
+                    </label>
+                    <input type="email" id="email">
+                    <label for="password">Contraseña
+                    </label>
+                    <input type="password" id="password">
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+
+            <div class="contenedor-login">
+                <form class="form-login" action="">
+                    <label for="email">E-Mail
+                    </label>
+                    <input type="email" id="email-log">
+                    <label for="password">Contraseña
+                    </label>
+                    <input type="password" id="password-log">
+                    <input type="submit" value="Iniciar Sesion">
+                </form>
+            </div>
+
+        </main>
+
+
+        <footer class="footer">
+
+            <h4>NERDILON</h4>
+            <div class="footer__social">
+                <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
