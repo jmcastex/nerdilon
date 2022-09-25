@@ -252,7 +252,7 @@ body{
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 860px) {
     .header__button {
         display: block;
         }
@@ -290,7 +290,6 @@ body{
             .header__li {
                 margin: 1em 0;
                 }
-
     .filtro{
         display: flex;
         flex-direction: column;
@@ -436,6 +435,7 @@ div.contenedor-register, .contenedor-login{
     width: 100%;
     height: 100%;
     background-color: #000000a5;
+    transition: all .8s;
     z-index: 100;
 }
 
@@ -448,7 +448,11 @@ form{
     border: 1px solid #DAB88B;
     padding: 20px;
     border-radius: 5px;
-    background: linear-gradient(#997a52, #ccc);
+    background: linear-gradient(#997a52, #b4b4b4);
+}
+
+form label{
+    color: #fff;
 }
 
 form [type="submit"]{
@@ -457,20 +461,47 @@ form [type="submit"]{
     background-color: #DAB88B;
     border: none;
     padding: 5px;
+}
+
+form input{
     border-radius: 5px;
+    box-shadow: 6px 8px 15px #4b3a23;
+    font-size: 15px;
 }
 
 nav ul li button{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #DAB88B;
+    color: #4b3a23;
+    font-size: 1.2rem;
+    font-weight: 900;
     border: none;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 5px;
 }
 
 nav ul li button:hover{
-    background-color: #ccc;
+    color: #181818;
 }
 
 form [type="submit"]:hover{
     background-color: #997a52;
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: 30px;
+    box-shadow: inset 0px 0px 10px #4b3a23;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 860px) {
+    .botones{
+        margin-left: 0;
+    }
 }

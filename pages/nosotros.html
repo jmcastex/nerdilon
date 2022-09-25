@@ -35,12 +35,57 @@
                     <li class="header__li"><a href="tienda.html" class="header__a">TIENDA</a></li>
                     <li class="header__li"><a href="./nosotros.html" class="header__a">NOSOTROS</a></li>
                     <li class="header__li"><a href="./contacto.html" class="header__a">CONTACTO</a></li>
+
+                    <div class="botones">
+                        <li class="header__li"><button class="header__a" id="login">INICIAR SESION</button></li>
+                        <li class="header__li"><button class="header__a" id="register">REGISTRESE</button></li>
+                    </div>
                 </ul>
             </nav>
         </header>
 
         <main>
-
+            <!--Section de Formularios-->
+            <section>
+                <div class="form">
+                    <div class="contenedor-register">
+                        <form class="form-register" action="">
+                            <label for="apellido">Apellido
+                            </label>
+                            <input type="text" id="apellido">
+                            <label for="nombre">Nombre
+                            </label>
+                            <input type="text" id="nombre">
+                            <label for="direccion">Direccion
+                            </label>
+                            <input type="text" id="direccion">
+                            <label for="telefono">Telefono
+                            </label>
+                            <input type="number" id="telefono">
+                            <label for="email">E-Mail
+                            </label>
+                            <input type="email" id="email">
+                            <label for="password">Contraseña
+                            </label>
+                            <input type="password" id="password">
+                            <input type="submit" value="Registrarse">
+                        </form>
+                    </div>
+        
+                    <div class="contenedor-login">
+                        <form class="form-login" action="">
+                            <label for="email">E-Mail
+                            </label>
+                            <input type="email" id="email-log">
+                            <label for="password">Contraseña
+                            </label>
+                            <input type="password" id="password-log">
+                            <input type="submit" value="Iniciar Sesion">
+                        </form>
+                    </div>
+                </div>
+            </section>
+    
 
 
         </main>
