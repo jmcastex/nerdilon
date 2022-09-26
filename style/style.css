@@ -4,7 +4,7 @@
     --fondo-dark-sec: #472918;
     --texto-dark-pri: #ccc;
     --texto-dark-sec: #ff9101;
-    --sombra-dark: #fffb0093;
+    --sombra-dark: #fffb004d;
     
     /* LIGHT */
     --fondo-light-pri: #cea671;
@@ -533,7 +533,7 @@ form [type="submit"]:hover{
 
 #tema{
     position: absolute;
-    top: 117px;
+    top: 120px;
     right: 7px;
     cursor: pointer;
     font-size: 20px;
@@ -542,10 +542,9 @@ form [type="submit"]:hover{
     color: var(--texto-dark-sec);
     border-radius: 50%;
     text-align: center;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border: none;
-    box-shadow: 0px 0px 30px var(--sombra-dark);
     z-index: 200;
 }
 
@@ -556,7 +555,6 @@ form [type="submit"]:hover{
 .dark #tema{
     color: var(--fondo-dark-pri);
     background-color: var(--texto-dark-sec);
-    box-shadow: 0px 0px 30px var(--sombra-dark);
 }
 
 .dark .luna{
