@@ -4,7 +4,7 @@
     --fondo-dark-sec: #472918;
     --texto-dark-pri: #ccc;
     --texto-dark-sec: #ff9101;
-    --sombra-dark: #fffb004d;
+    --sombra-dark: #fffb00;
     
     /* LIGHT */
     --fondo-light-pri: #cea671;
@@ -13,7 +13,7 @@
     --texto-light-pri: #fff;
     --texto-light-sec: #000;
     --texto-light-ter: #a52a2a;
-    --sombra-light: #000000ab;
+    --sombra-light: #000000;
 }
 
 *{
@@ -67,7 +67,7 @@ body{
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0px 5px 15px var(--sombra-light);
+            box-shadow: 0px 1px 15px var(--sombra-light);
             
         }
             .header_logo{
@@ -186,7 +186,7 @@ body{
                     height: 430px;
                     border-radius: 8px;
                     background-color: var(--fondo-light-ter);
-                    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 1px 10px var(--sombra-light);
                     overflow: hidden;
                     margin: 20px;
                     margin-top: 60px;
@@ -197,7 +197,7 @@ body{
                 
                     .destacados_container_productos:hover{
                         transform: translateY(-15px);
-                        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+                        box-shadow: 0 8px 20px var(--sombra-light);
                     }
                     
                     .destacados_container_productos img{
@@ -240,7 +240,7 @@ body{
             padding-right: 25px;
             font-size: 1.5rem;
             color: var(--texto-light-pri);
-            box-shadow: 0px -5px 15px var(--sombra-light);
+            box-shadow: 0px -1px 15px var(--sombra-light);
         }
         
             .footer__social a{
@@ -580,11 +580,11 @@ form [type="submit"]:hover{
 }
 
 .dark header{
-    box-shadow: 0px 5px 15px var(--sombra-dark);
+    box-shadow: 0px 0px 15px var(--sombra-dark);
 }
 
 .dark .footer{
-    box-shadow: 0px -5px 15px var(--sombra-dark);
+    box-shadow: 0px 0px 15px var(--sombra-dark);
 }
 
 .dark header a:hover, .dark .section-footer a:hover, .dark header button:hover, .dark footer a:hover{
@@ -594,3 +594,12 @@ form [type="submit"]:hover{
 .dark .header_logo img{
     content: url("../resources/images/logofull-dark.png");
 }
+
+.dark .destacados_container_productos{
+    box-shadow: 0px 2px 10px var(--sombra-dark);
+}
+
+.dark .destacados_container_productos:hover{
+    box-shadow: 0 12px 16px var(--sombra-dark);
+}
+
