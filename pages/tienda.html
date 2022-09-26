@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <script defer src="../js/main.js"></script>
     <title>Nerdilon</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
 
     <div class="padre__tienda">
@@ -24,8 +27,10 @@
             </div>
 
             <button class="header__button">
-                <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg>
             </button>
 
@@ -45,55 +50,59 @@
         </header>
 
         <main>
-                        <!--Section de Formularios-->
-                        <section>
-                            <div class="form">
-                                <div class="contenedor-register">
-                                    <form class="form-register" action="">
-                                        <label for="apellido">Apellido
-                                        </label>
-                                        <input type="text" id="apellido">
-                                        <label for="nombre">Nombre
-                                        </label>
-                                        <input type="text" id="nombre">
-                                        <label for="direccion">Direccion
-                                        </label>
-                                        <input type="text" id="direccion">
-                                        <label for="telefono">Telefono
-                                        </label>
-                                        <input type="number" id="telefono">
-                                        <label for="email">E-Mail
-                                        </label>
-                                        <input type="email" id="email">
-                                        <label for="password">Contraseña
-                                        </label>
-                                        <input type="password" id="password">
-                                        <input type="submit" value="Registrarse">
-                                    </form>
-                                </div>
-                    
-                                <div class="contenedor-login">
-                                    <form class="form-login" action="">
-                                        <label for="email">E-Mail
-                                        </label>
-                                        <input type="email" id="email-log">
-                                        <label for="password">Contraseña
-                                        </label>
-                                        <input type="password" id="password-log">
-                                        <input type="submit" value="Iniciar Sesion">
-                                    </form>
-                                </div>
-                            </div>
-                        </section>
-                        <button id="tema">
-                            <span class="sol">
-                                <i class="fa-solid fa-sun"></i>
-                            </span>
-                            <span class="luna">
-                                <i class="fa-solid fa-moon"></i>
-                            </span>
-                        </button>
-                            <div class="borrame"></div>
+            <!--Section de Formularios-->
+            <section>
+                <div class="form">
+                    <div class="contenedor-register">
+                        <div class="efecto">
+                            <form class="form-register" action="">
+                                <label for="apellido">Apellido
+                                </label>
+                                <input type="text" id="apellido">
+                                <label for="nombre">Nombre
+                                </label>
+                                <input type="text" id="nombre">
+                                <label for="direccion">Direccion
+                                </label>
+                                <input type="text" id="direccion">
+                                <label for="telefono">Telefono
+                                </label>
+                                <input type="number" id="telefono">
+                                <label for="email">E-Mail
+                                </label>
+                                <input type="email" id="email">
+                                <label for="password">Contraseña
+                                </label>
+                                <input type="password" id="password">
+                                <input type="submit" value="Registrarse">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-login">
+                        <div class="efecto">
+                            <form class="form-login" action="">
+                                <label for="email">E-Mail
+                                </label>
+                                <input type="email" id="email-log">
+                                <label for="password">Contraseña
+                                </label>
+                                <input type="password" id="password-log">
+                                <input type="submit" value="Iniciar Sesion">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <button id="tema">
+                <span class="sol">
+                    <i class="fa-solid fa-sun"></i>
+                </span>
+                <span class="luna">
+                    <i class="fa-solid fa-moon"></i>
+                </span>
+            </button>
+            <div class="borrame"></div>
 
 
         </main>
@@ -101,14 +110,15 @@
 
         <footer class="footer">
 
-                <h4>NERDILON</h4>
-                <div class="footer__social">
-                    <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
-                </div>
+            <h4>NERDILON</h4>
+            <div class="footer__social">
+                <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
 
         </footer>
     </div>
-    
+
 </body>
+
 </html>
