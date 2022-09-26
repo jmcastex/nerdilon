@@ -85,7 +85,8 @@ body{
                 .header__svg {
                     width: 3em;
                     height: 3em;
-                    color: var(--texto-light-pri);
+                    background-color: var(--fondo-light-pri);
+                    color: var(--texto-light-sec);
                 }
 
             .header_nav{
