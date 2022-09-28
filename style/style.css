@@ -34,7 +34,7 @@ ul{
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--fondo-light-sec);
+    background-color: #fff;
     color: var(--texto-light-sec);
 }
 
@@ -371,9 +371,7 @@ body{
 
                 /*----------------------------------------FIN PAGINA INDEX-------------------------------------*/
 
-.borrame{
-    height: 100vh;
-}
+
 
 .banner img{
     position: relative;
@@ -663,4 +661,104 @@ form [type="submit"]:hover{
     100% {
         transform: rotate(360deg);
     }
+}
+
+
+
+
+
+
+/*------------------------------------------------tienda---------------------------------------------------------------------*/
+
+
+.container_Tienda{
+    margin-bottom: 40px;
+    display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-areas:"header           header           "
+                            "categorias       productosTienda  "
+                            "footer           footer           ";
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 60px;
+}
+
+.categorias h2{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.categorias ul{
+    font-size: 1.2rem;
+}
+
+
+.productosTienda{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.card_tienda{
+    width: 320px;
+    height: 430px;
+    border-radius: 8px;
+    background-color: var(--fondo-light-ter);
+    box-shadow: 0 1px 10px var(--sombra-light);
+    overflow: hidden;
+    margin: 20px;
+    margin-top: 60px;
+    text-align: center;
+    color: var(--texto-light-sec);
+}
+
+
+.card_tienda img{
+    width: 320px;
+}
+
+.card_tienda h4{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.card_tienda p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    color: green;
+    font-weight: 600;
+}
+.card_tienda a{
+    font-weight: 700;
+    text-decoration: none;
+    background-color:  #cea671;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+
+
+.card_tienda a:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px var(--sombra-light);
+}
+
+.card_tienda a:active{
+    background-color: #ffffcd;
+    color: black;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px var(--sombra-light);
 }
