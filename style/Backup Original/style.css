@@ -1,0 +1,365 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #181818;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FDF6EC;
+    color: #181818;
+}
+
+
+                /*----------------------------------------INICIO PAGINA INDEX-------------------------------------*/
+
+    .padre__index{
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:"header      header      header      header     "
+                            "portada     portada     portada     portada    "
+                            "destacados  destacados  destacados  destacados "
+                            "footer      footer      footer      footer     ";
+    }
+
+
+                /*----------------------------------------HEADER--------------------------------------------------*/
+
+
+
+        .header{
+            width: 100%;
+            background-color:#DAB88B;
+            font-weight: 900;
+            padding: 15px;
+            grid-column-start: header;
+            grid-column-end: header;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 10px;
+            
+        }
+            .header_logo{
+                padding-left: 15px;
+                flex: 1;
+                display: flex;
+                
+            }
+            
+            .header__button {
+                background-color: #DAB88B;
+                display: none;
+                cursor: pointer;
+            }
+
+                .header__svg {
+                    background-color: #DAB88B;
+                    width: 3em;
+                    height: 3em;
+                    color: #FDF6EC;
+                }
+
+            .header_nav{
+                flex: 1;
+                flex-grow: 1;
+            }
+                .header__ul{
+                    background-color: #DAB88B;
+                    display: flex;
+                    justify-content: space-evenly;
+                    font-size: 1.2rem;
+                    align-items: center;
+                }
+
+                .header__li a{
+                    color: white;
+                }
+
+                .header__li a:hover{
+                    color: #181818;
+                }
+
+                .header__li {
+                    margin: 0 0.5em;
+                    display: inline-block;
+                    vertical-align: middle;
+                    transform: perspective(1px) translateZ(0);
+                    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                    transition-duration: 0.3s;
+                    transition-property: transform;
+                }
+                .header__li:hover, .header__li:focus, .header__li:active {
+                    transform: scale(1.2);
+                }
+
+
+                /*----------------------------------------PORTADA----------------------------------------------------*/
+
+
+
+        .portada{
+            grid-column-start: portada;
+            grid-column-end: portada;
+            width: 100%;
+            height: 48vh;
+            background-image: url(../resources/images/amigos-tomando-cafe-cafeteria_53876-11091.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #FDF6EC;
+        }
+
+            .filtro{
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+                .portada__texto{
+                    padding: 30px;
+                    padding-top: 80px;
+                }
+
+                    .portada__texto h1{
+                        font-size: 3rem;
+                    }
+
+                /*----------------------------------------DESTACADOS-------------------------------------------------*/
+        
+
+        .destacados{
+            grid-column-start: destacados;
+            grid-column-end: destacados;
+            width: 100%;
+            margin: auto;
+            margin-top: 70px;
+            background-color: #FDF6EC;
+            
+        }
+
+        .destacados_titulo{
+            color: white;
+            background-color: #DAB88B;
+            width: 96%;
+            text-align: center;
+            margin: auto;
+            border-radius: 5px;
+            
+        }
+
+            .destacados_container{
+                width: 100%;
+                max-width: 1800px;
+                background-color: #FDF6EC;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: auto;
+                }
+                
+                .destacados_container_productos{
+                    width: 320px;
+                    height: 430px;
+                    border-radius: 8px;
+                    background-color: white;
+                    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+                    overflow: hidden;
+                    margin: 20px;
+                    margin-top: 60px;
+                    text-align: center;
+                    transition: all 0.25s;
+                }
+                
+                    .destacados_container_productos:hover{
+                        transform: translateY(-15px);
+                        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+                    }
+                    
+                    .destacados_container_productos img{
+                        width: 320px;
+                    }
+                    
+                    .destacados_container_productos h3{
+                        font-weight: 600;
+                    }
+                    
+                    .destacados_container_productos p{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        padding: 0 1rem;
+                        font-size: 1rem;
+                        font-weight: 300;
+                    }
+                    .destacados_container_productos a{
+                        font-weight: 500;
+                        text-decoration: none;
+                        color: white;
+                        padding: 3px 8px;
+                        border-radius: 6px;
+                        background-color: #DAB88B;
+                    }
+
+
+                /*----------------------------------------FOOTER----------------------------------------------------------*/    
+
+
+        .footer{
+            background-color: #DAB88B;
+            grid-column-start: footer;
+            grid-column-end: footer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            padding-left: 30px;
+            padding-right: 25px;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+            .footer__social a{
+                font-size: 1.7rem;
+                color: white;
+
+            }
+
+
+                /*----------------------------------------MEDIA QUERIES-----------------------------------------------------*/
+
+
+
+
+
+
+@media only screen and (max-width: 1172px) {
+    .portada{
+        width: 100%;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .header__button {
+        display: block;
+        }
+    .header__nav {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        opacity: 0;
+        height: 0vh;
+        overflow: hidden;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        }
+    .header__nav--activo {
+        opacity: 1;
+        height: 50vh;
+        }
+        .header__ul {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            }
+            .header__li {
+                margin: 1em 0;
+                }
+
+    .filtro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+            
+        .portada__texto h1{
+            padding-left: 0;
+            font-size: 2rem;
+            text-align: center;
+        }
+            
+        .portada__texto {
+            text-align: center;
+        }
+            
+    .destacados_titulo{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 574px) and (min-width: 481px){
+    .header{
+        justify-content: center;    
+    }
+
+    .header__ul{
+        margin-top: 20px;
+    }
+
+    .filtro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+
+    }
+
+    .portada__texto h1{
+        padding-left: 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .portada__texto {
+        text-align: center;
+    }
+
+    .destacados_titulo{
+        font-size: 1.4rem;
+    }
+
+
+}
+
+
+
+                /*----------------------------------------FIN PAGINA INDEX-------------------------------------*/
+
+
+
+
+
+
+
+
+
+
