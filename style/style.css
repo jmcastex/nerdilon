@@ -4,7 +4,7 @@
     --fondo-dark-sec: #2c1500;
     --texto-dark-pri: #ccc;
     --texto-dark-sec: #ff9101;
-    --sombra-dark: #fffb00;
+    --sombra-dark: #727000;
     
     /* LIGHT */
     --fondo-light-pri: #cea671;
@@ -434,6 +434,7 @@ body{
 .section-footer li i{
     vertical-align: middle;
     font-size: 35px;
+    margin-bottom: 30px;
 }
 
 .section-footer a:hover{
