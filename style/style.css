@@ -1,7 +1,7 @@
 :root{
     /* DARK */
-    --fondo-dark-pri: #2c1500;
-    --fondo-dark-sec: #472918;
+    --fondo-dark-pri: #472918;
+    --fondo-dark-sec: #2c1500;
     --texto-dark-pri: #ccc;
     --texto-dark-sec: #ff9101;
     --sombra-dark: #fffb00;
@@ -165,6 +165,7 @@ body{
         }
 
         .destacados_titulo{
+            padding: 10px;
             color: var(--texto-light-pri);
             background-color: var(--fondo-light-pri);
             width: 96%;
@@ -406,8 +407,11 @@ body{
 .section-body p{
     text-align: center;
     width: 70%;
-    margin: 20px auto;
-
+    margin: 0 auto;
+    font-size: 20px;
+}
+.section-body h2{
+    margin-bottom: 50px;
 }
 
 .section-footer{
@@ -417,12 +421,18 @@ body{
 
 .section-footer ul{
     display: flex;
-    gap: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .section-footer li{
+    text-align: center;
+}
+
+.section-footer li i{
+    vertical-align: middle;
     font-size: 35px;
 }
 
