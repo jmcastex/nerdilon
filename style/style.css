@@ -496,7 +496,7 @@ form label{
     color: var(--texto-light-pri);
 }
 
-form [type="submit"]{
+form [type="submit"],[type="reset"]{
     cursor: pointer;
     margin-top: 20px;
     width: 100px;
@@ -526,7 +526,7 @@ nav ul li button:hover{
     color: #181818;
 }
 
-form [type="submit"]:hover{
+form [type="submit"]:hover, [type="reset"]:hover{
     transition: all .2s;
     transform: translateY(-2px);
     box-shadow: 10px 15px 15px #4b3a23;
@@ -550,6 +550,61 @@ form [type="submit"]:hover{
         margin-left: 0;
         margin-top: 30px;
     }
+}
+
+.closeForm{
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    display: flexbox;
+    position: fixed;
+    margin: -18px -18px -18px -18px;
+    border-radius: 5px;
+}
+
+.closeForm:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.sobreNerdilon{
+    font-size: 40px;
+}
+
+.especialidad{
+    font-size: 25px;
+    color: var(--texto-light-pri);
+    background-color: var(--fondo-light-pri);
+}
+
+.consulta{
+    position: absolute;
+    width: 200px;
+    align-content: center;
+    font-size: 15px;
+    top: 270px;
+    margin: 0px 15px 15px 15px;
+    color:rgb(0, 0, 0);
+}
+
+.irAlLogin{
+    /* display: flex; */
+    position: relative;
+    left: 180px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100px;
+    background-color: var(--fondo-light-pri);
+    border: none;
+    padding: 5px;
+}
+
+.irAlLogin:hover{
+    transition: all .2s;
+    transform: translateY(-2px);
+    box-shadow: 10px 15px 15px #4b3a23;
 }
 
 /* Tema Oscuro */

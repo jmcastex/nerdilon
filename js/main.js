@@ -5,6 +5,7 @@ var btnRegister = document.querySelector("#register");
 var frmLogin = document.querySelector(".form");
 var btnTema = document.querySelector("#tema");
 var cuerpo = document.querySelector("body");
+let closeForm = document.querySelector(".closeForm");
 
 button.addEventListener('click', function () {
     nav.classList.toggle('header__nav--activo');
@@ -12,10 +13,27 @@ button.addEventListener('click', function () {
 
 btnLogin.addEventListener("click", function () {
     frmLogin.classList.toggle("login");
+    console.log(frmLogin.children[0].hidden)
+    if(!frmLogin.children[1].hidden){
+        frmLogin.hidden = false;
+        frmLogin.children[0].hidden = true;
+        frmLogin.children[1].hidden = false;
+    }//no estaria sabiendo porque no se esconde el form de registro
+    console.log(window)
 });
 
 btnRegister.addEventListener("click", function () {
     frmLogin.classList.toggle("register");
+    if(frmLogin.hidden){
+        frmLogin.hidden = false;
+    }
+});
+
+closeForm.addEventListener("click", function () {
+    console.log(window);
+    if(!frmLogin.hidden){
+        frmLogin.hidden = true;
+    }
 });
 
 function cambiarModo() {
