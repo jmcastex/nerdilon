@@ -1,4 +1,5 @@
-[
+{
+    "tazas":[
     {
         "id" : 1,
         "nombre": "Taza Half Life",
@@ -71,4 +72,112 @@
         "imagen":"../resources/images/simpsonnn.jpg",
         "precio": 1000
     }
-]
+],
+"remeras":[
+    {
+        "id" : 13,
+        "nombre": "Darth Vader",
+        "imagen":"../resources/images/remera-darth.png",
+        "precio": 3000
+    },
+    {
+        "id" : 14,
+        "nombre": "Dragon Ball - Goku",
+        "imagen":"../resources/images/remera-goku.png",
+        "precio": 3000
+    },
+    {
+        "id" : 15,
+        "nombre": "Sonic",
+        "imagen":"../resources/images/remera-sonic.png",
+        "precio": 3000
+    },
+    {
+        "id" : 16,
+        "nombre": "Dragon Ball Z - Vegeta",
+        "imagen":"../resources/images/remera-vegeta.png",
+        "precio": 3000
+    }
+],
+"llaveros":[
+    {
+        "id" : 17,
+        "nombre": "El Troncoswagen",
+        "imagen":"../resources/images/llavero-autos-locos-1.png",
+        "precio": 1500
+    },
+    {
+        "id" : 18,
+        "nombre": "El Rocomovil",
+        "imagen":"../resources/images/llavero-autos-locos-2.png",
+        "precio": 1500
+    },
+    {
+        "id" : 19,
+        "nombre": "El Espantomovil",
+        "imagen":"../resources/images/llavero-autos-locos-3.png",
+        "precio": 1500
+    },
+    {
+        "id" : 20,
+        "nombre": "El Alambique Veloz de Arkansas",
+        "imagen":"../resources/images/llavero-autos-locos-4.png",
+        "precio": 1500
+    },
+    {
+        "id" : 21,
+        "nombre": "Boca JRS",
+        "imagen":"../resources/images/llavero-boca.png",
+        "precio": 1500
+    },
+    {
+        "id" : 22,
+        "nombre": "Chevrolet",
+        "imagen":"../resources/images/llavero-chevrolet.png",
+        "precio": 1500
+    },
+    {
+        "id" : 23,
+        "nombre": "River Plate",
+        "imagen":"../resources/images/llavero-river.png",
+        "precio": 1500
+    }
+],
+"mousepads":[
+    {
+        "id" : 24,
+        "nombre": "Marvel",
+        "imagen":"../resources/images/mouse-pad-1.png",
+        "precio": 2500
+    },
+    {
+        "id" : 25,
+        "nombre": "Spider-Man",
+        "imagen":"../resources/images/mouse-pad-2.png",
+        "precio": 2500
+    },
+    {
+        "id" : 26,
+        "nombre": "Sonic",
+        "imagen":"../resources/images/mouse-pad-3.png",
+        "precio": 2500
+    },
+    {
+        "id" : 27,
+        "nombre": "Dragon Ball - Goku",
+        "imagen":"../resources/images/mouse-pad-4.png",
+        "precio": 2500
+    },
+    {
+        "id" : 28,
+        "nombre": "Dragon Ball Super - Goku y Vegeta",
+        "imagen":"../resources/images/mouse-pad-5.png",
+        "precio": 2500
+    },
+    {
+        "id" : 29,
+        "nombre": "Dragon Ball - Transformaciones de Goku",
+        "imagen":"../resources/images/mouse-pad-6.png",
+        "precio": 2500
+    }
+]}
