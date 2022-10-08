@@ -1,0 +1,74 @@
+[
+    {
+        "id" : 1,
+        "nombre": "Taza Half Life",
+        "imagen":"../resources/images/halflife1.jpg",
+        "precio": 1000
+    },
+    {
+        "id" : 2,
+        "nombre": "Taza Half Life H.E.V.",
+        "imagen":"../resources/images/half life 2.jpg",
+        "precio": 1000
+    },
+    {
+        "id" : 3,
+        "nombre": "Taza Half Life First Aid",
+        "imagen":"../resources/images/half life 3.jpg",
+        "precio": 1000
+    },
+    {
+        "id" : 4,
+        "nombre": "Taza Half Life 3",
+        "imagen":"../resources/images/half life 1-5.jpg",
+        "precio": 1000
+    },
+    {
+        "id" : 5,
+        "nombre": "Baby Yoda",
+        "imagen":"../resources/images/imagen1.jpg",
+        "precio": 1000
+    },
+    {
+        "id" : 6,
+        "nombre": "Baby Yoda 2",
+        "imagen":"../resources/images/imagen2.jpg",
+        "precio": 1000
+    },
+    {
+        "id" : 7,
+        "nombre": "Mandalorian",
+        "imagen":"../resources/images/imagen3.jpg",
+        "precio": 1000
+    },
+    {
+        "id" : 8,
+        "nombre": "Friends",
+        "imagen":"../resources/images/imagen4.jpg",
+        "precio": 1000
+    },
+    {
+        "id" : 9,
+        "nombre": "The Office",
+        "imagen":"../resources/images/imagen5.jpg",
+        "precio": 1000
+    },
+    {
+        "id" : 10,
+        "nombre": "Jason",
+        "imagen":"../resources/images/jasonn41.jpg",
+        "precio": 1000
+    },
+    {
+        "id" : 11,
+        "nombre": "The Witcher",
+        "imagen":"../resources/images/witcher 6.jpg",
+        "precio": 1000
+    },
+    {
+        "id" : 12,
+        "nombre": "Todo Bien",
+        "imagen":"../resources/images/simpsonnn.jpg",
+        "precio": 1000
+    }
+]

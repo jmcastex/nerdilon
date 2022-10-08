@@ -736,6 +736,8 @@ form [type="submit"]:hover{
 
 .card_tienda img{
     width: 320px;
+    height: 290px;
+    object-fit: cover;
 }
 
 .card_tienda h4{
@@ -773,4 +775,11 @@ form [type="submit"]:hover{
     color: black;
     transform: translateY(-2px);
     box-shadow: 0 4px 20px var(--sombra-light);
+}
+
+#productosTienda h2{
+    font-size: 2rem;
+    width: 100%;
+    margin-top: 65px;
+    text-align: center;
 }
