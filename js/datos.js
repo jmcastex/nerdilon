@@ -1,9 +1,8 @@
-let url="https://github.com/jmcastex/nerdilon/tree/master/resources/data/productos.json"
+let url="../resources/data/productos.json"
 
-fetch(url)
+fetch(url, {mode:"no-cors"})
     .then(res => res.json())
     .then(data => {
-
         let cadena = "";
 
         for (let prod of data){
