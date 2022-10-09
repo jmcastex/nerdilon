@@ -6,6 +6,9 @@ let filtros = {
     llaveros: document.getElementById("llaveros"),
     muniecos: document.getElementById("muniecos"),
     mousepads: document.getElementById("mousepads"),
+    ninguna(){
+        return this.tazas || this.remeras || this.llaveros || this.muniecos || this.mousepads;
+    }
 }
 
 
@@ -14,7 +17,6 @@ function pintarDatos(){
         .then(res => res.json())
         .then(data => {
             let cadena = "";
-    
             for (let tipo in data) {
                 if (!filtros[tipo].checked){
                 //    continue;
@@ -31,7 +33,9 @@ function pintarDatos(){
                     }
                 }
             }
-    
+            if (cadena===""){
+                cadena="<h2>Seleccione una Categoria</h2>"
+            }
             document.getElementById("productosTienda").innerHTML = cadena
         })
 }

@@ -733,6 +733,7 @@ form [type="submit"]:hover, [type="reset"]:hover{
 
 .container_Tienda{
     margin-bottom: 40px;
+    min-height: 300px;
 }
 
 .categorias{
