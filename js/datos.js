@@ -1,4 +1,5 @@
-let url = "../resources/data/productos.json"
+let url = "../resource/data/productos.json"
+url="https://jmcastex.github.io/nerdilon/resources/data/productos.json"
 
 let filtros = {
     tazas: document.getElementById("tazas"),
@@ -14,7 +15,7 @@ let filtros = {
 
 function pintarDatos(){
     fetch(url, { mode: "no-cors" })
-        .then(res => res.json())
+        .then(res => console.log(res))
         .then(data => {
             let cadena = "";
             for (let tipo in data) {
