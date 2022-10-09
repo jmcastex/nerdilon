@@ -545,13 +545,6 @@ form [type="submit"]:hover, [type="reset"]:hover{
     font-size: 7px;
 }
 
-@media screen and (max-width: 860px) {
-    .botones{
-        margin-left: 0;
-        margin-top: 30px;
-    }
-}
-
 .closeForm{
     width: 20px;
     height: 20px;
@@ -740,40 +733,38 @@ form [type="submit"]:hover, [type="reset"]:hover{
 
 .container_Tienda{
     margin-bottom: 40px;
-    display: grid;
-        grid-template-columns: 15% 85%;
-        grid-template-areas:"header           header           "
-                            "categorias       productosTienda  "
-                            "footer           footer           ";
 }
 
 .categorias{
+    position: fixed;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    margin-top: 60px;
+    padding-top: 60px;
+    height: 100%;
+    width: 250px;
 }
 
 .categorias h2{
+    width: 100%;
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 40px;
 }
 
 .categorias ul{
     font-size: 1.2rem;
+    padding-left: 20px;
 }
 
 
 .productosTienda{
-    width: 100%;
+    margin-left: 250px;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
 }
-
-
-
-
 
 .card_tienda{
     width: 320px;
@@ -787,7 +778,6 @@ form [type="submit"]:hover, [type="reset"]:hover{
     text-align: center;
     color: var(--texto-light-sec);
 }
-
 
 .card_tienda img{
     width: 320px;
@@ -808,6 +798,7 @@ form [type="submit"]:hover, [type="reset"]:hover{
     color: green;
     font-weight: 600;
 }
+
 .card_tienda a{
     font-weight: 700;
     text-decoration: none;
@@ -817,8 +808,6 @@ form [type="submit"]:hover, [type="reset"]:hover{
     border-radius: 6px;
     color: #fff;
 }
-
-
 
 .card_tienda a:hover{
     transform: translateY(-8px);
@@ -837,4 +826,45 @@ form [type="submit"]:hover, [type="reset"]:hover{
     width: 100%;
     margin-top: 65px;
     text-align: center;
+}
+
+@media screen and (max-width: 860px) {
+    .botones{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .container_Tienda{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categorias{
+        position: initial;
+        width: 100%;
+    }
+
+    .categorias ul{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .productosTienda{
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .categorias ul{
+        display: block;
+        text-align: center;
+    }
+
+    .card_tienda img{
+        width: 240px;
+        object-fit: cover;
+    }
 }

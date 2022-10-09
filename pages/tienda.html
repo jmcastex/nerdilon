@@ -19,7 +19,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body>
+<body onload="pintarDatos()">
 
     <div class="padre__tienda">
         <header class="header">
@@ -116,24 +116,19 @@
                     <h2>Categorias</h2>
                     <ul>
                         <li>
-                            <input type="checkbox" name="" id="">
-                            <label for="">Tazas</label>
+                            <label onclick="pintarDatos()" for="tazas"><input type="checkbox" name="" id="tazas" checked> Tazas</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="" id="">
-                            <label for="">remeras</label>
+                            <label onclick="pintarDatos()" for="remeras"><input type="checkbox" name="" id="remeras" checked> Remeras</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="" id="">
-                            <label for="">llaveros</label>
+                            <label onclick="pintarDatos()" for="llaveros"><input type="checkbox" name="" id="llaveros" checked> Llaveros</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="" id="">
-                            <label for="">muñecos</label>
+                            <label onclick="pintarDatos()" for="mousepads"><input type="checkbox" name="" id="mousepads" checked> Mouse Pads</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="" id="">
-                            <label for="">mouse pads</label>
+                            <label onclick="pintarDatos()" for="muniecos"><input type="checkbox" name="" id="muniecos" checked> Muñecos</label>
                         </li>
                     </ul>
                 </section>

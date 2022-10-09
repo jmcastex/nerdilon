@@ -176,8 +176,35 @@
     },
     {
         "id" : 29,
-        "nombre": "Dragon Ball - Transformaciones de Goku",
+        "nombre": "Dragon Ball Z - Goku",
         "imagen":"../resources/images/mouse-pad-6.png",
         "precio": 2500
     }
-]}
+],
+"muniecos":[
+    {
+        "id" : 30,
+        "nombre": "Dragon Ball Z - Goku",
+        "imagen":"../resources/images/munieco-goku.png",
+        "precio": 3000
+    },
+    {
+        "id" : 31,
+        "nombre": "Iron Man",
+        "imagen":"../resources/images/munieco-ironman.png",
+        "precio": 3000
+    },
+    {
+        "id" : 32,
+        "nombre": "Knuckles",
+        "imagen":"../resources/images/munieco-knuckles.png",
+        "precio": 3000
+    },
+    {
+        "id" : 33,
+        "nombre": "Dragon Ball Z - Vegeta",
+        "imagen":"../resources/images/munieco-vegeta.png",
+        "precio": 3000
+    }
+]
+}
