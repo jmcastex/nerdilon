@@ -1,7 +1,7 @@
 var button = document.querySelector('.header__button');
 var nav = document.querySelector('.header__nav');
-var btnLogin = document.querySelector("#login");
-var btnRegister = document.querySelector("#register");
+var btnLogin = document.getElementById("#login");
+var btnRegister = document.getElementById("#register");
 var frmLogin = document.querySelector(".form");
 var btnTema = document.querySelector("#tema");
 var cuerpo = document.querySelector("body");
@@ -12,13 +12,13 @@ button.addEventListener('click', function () {
     nav.classList.toggle('header__nav--activo');
 });
 
-btnLogin.addEventListener("click", function () {
+function login() {
     frmLogin.classList.toggle("login");
-});
+};
 
-btnRegister.addEventListener("click", function () {
+function register() {
     frmLogin.classList.toggle("register");
-});
+};
 
 closeForm[0].addEventListener("click", function () {
     frmLogin.classList.toggle("register");

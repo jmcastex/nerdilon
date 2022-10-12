@@ -437,6 +437,18 @@ body{
     margin-bottom: 30px;
 }
 
+.img-perfil{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.perfil{
+    font-size: 1rem;
+    text-align: center;
+}
+
 .section-footer a:hover{
     color: var(--texto-light-ter);
 }
@@ -483,10 +495,10 @@ form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    width: 350px;
+    width: 300px;
     margin: 0 auto;
     border: 1px solid var(--fondo-light-pri);
-    padding: 20px;
+    padding: 30px;
     border-radius: 5px;
     background: linear-gradient(#997a52, #b4b4b4);
     z-index: 200;
@@ -509,6 +521,7 @@ form input{
     border-radius: 5px;
     box-shadow: 6px 8px 15px #4b3a23;
     font-size: 15px;
+    width: 120px;
 }
 
 nav ul li button{
@@ -532,6 +545,10 @@ form [type="submit"]:hover, [type="reset"]:hover{
     box-shadow: 10px 15px 15px #4b3a23;
 }
 
+#botones-log-reg{
+    margin: 0 15px;
+}
+
 .botones{
     width: 100%;
     display: flex;
@@ -539,7 +556,6 @@ form [type="submit"]:hover, [type="reset"]:hover{
     justify-content: start;
     align-items: center;
     gap: 5px;
-    margin-left: 30px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 7px;
@@ -550,14 +566,14 @@ form [type="submit"]:hover, [type="reset"]:hover{
     height: 20px;
     font-weight: bold;
     text-align: center;
-    background-color: rgb(255, 0, 0);
-    display: flexbox;
+    background-color: #c44b4b;
     position: fixed;
-    margin: -18px -18px -18px -18px;
+    margin: -25px -25px -25px -25px;
     border-radius: 5px;
 }
 
 .closeForm:hover{
+    transition: all .2s;
     transform: scale(1.2);
     cursor: pointer;
 }
@@ -577,7 +593,7 @@ form [type="submit"]:hover, [type="reset"]:hover{
     width: 200px;
     align-content: center;
     font-size: 15px;
-    top: 270px;
+    top: 280px;
     margin: 0px 15px 15px 15px;
     color:rgb(0, 0, 0);
 }
@@ -585,19 +601,15 @@ form [type="submit"]:hover, [type="reset"]:hover{
 .irAlLogin{
     /* display: flex; */
     position: relative;
-    left: 180px;
-    cursor: pointer;
-    margin-top: 5px;
-    width: 100px;
-    background-color: var(--fondo-light-pri);
+    left: 142px;
+    top: 7px;
     border: none;
-    padding: 5px;
-}
-
-.irAlLogin:hover{
-    transition: all .2s;
-    transform: translateY(-2px);
-    box-shadow: 10px 15px 15px #4b3a23;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
 }
 
 /* Tema Oscuro */

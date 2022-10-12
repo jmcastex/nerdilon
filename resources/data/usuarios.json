@@ -1,0 +1,9 @@
+    {
+        "apellido": "paz",
+        "nombre": "abel",
+        "direccion": "pedro pico 855",
+        "telefono": "12345678",
+        "email": "abelpaz@hotmail.com",
+        "contraseña": "cualquiera",
+        "img":"../resources/images/goku-perfil.png"
+    }

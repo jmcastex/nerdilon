@@ -1,5 +1,6 @@
-let url = "../resources/data/productos.json"; //direccion local
-url="https://raw.githubusercontent.com/jmcastex/nerdilon/master/resources/data/productos.json"
+let urldatos = ""
+urldatos = "../resources/data/productos.json"; //direccion local
+urldatos = "https://raw.githubusercontent.com/jmcastex/nerdilon/master/resources/data/productos.json"
 
 let filtros = {
     tazas: document.getElementById("tazas"),
@@ -14,7 +15,7 @@ let filtros = {
 
 
 function pintarDatos(){
-    fetch(url)
+    fetch(urldatos)
         .then(res => res.json())
         .then(data => {
             let cadena = "";
