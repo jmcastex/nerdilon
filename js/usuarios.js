@@ -1,4 +1,4 @@
-let urlUsuarios = "../resources/data/usuarios.json"
+let urlUsuarios = "https://raw.githubusercontent.com/jmcastex/nerdilon/master/resources/data/usuarios.json"
 
 function registro(){
     alert("Ja. Eso no Anda")
