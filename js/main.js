@@ -43,6 +43,7 @@ btnTema.addEventListener("click", function () {
 })
 
 document.addEventListener("DOMContentLoaded", function () {
+    sesionActiva()
     if (localStorage.getItem("oscuro")=="true") {
         cambiarModo();
     }

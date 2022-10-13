@@ -15,6 +15,11 @@ function iniciaSesion(){
     .then(data => {
         if (data.email === form.email.value && data.contraseña === form.contraseña.value){
             sessionStorage.logueado = "si"
+            form.contraseña.value=""
+            form.email.value=""
+            document.getElementById("btn-cerrar-log").click();
+            sesionActiva()
+            location.reload()
         }else{
             alert("Email o Contraseña Incorrecto!")
         }
