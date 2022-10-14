@@ -419,10 +419,13 @@ body{
 }
 
 .frame-dir{
+    width: 600px;
+    height: 400px;
     display: flex;
     margin: 0 auto;
-    box-shadow: 0px 0px 10px red;
+    box-shadow: 0px 0px 10px var(--texto-light-ter);
     margin-top: 30px;
+    border-radius: 10px;
 }
 
 .section-footer{
@@ -673,6 +676,10 @@ form [type="submit"]:hover, [type="reset"]:hover{
     color: var(--texto-dark-pri);
 }
 
+.dark .frame-dir{
+    box-shadow: 0px 0px 10px var(--texto-dark-sec);
+}
+
 .dark header{
     box-shadow: 0px 0px 15px var(--sombra-dark);
 }
@@ -879,9 +886,12 @@ form [type="submit"]:hover, [type="reset"]:hover{
         width: 100%;
         justify-content: center;
     }
-}
 
-@media screen and (max-width: 860px) {
+    .frame-dir{
+        width: 350px;
+        height: 250px;
+    }
+    
     .categorias ul{
         display: block;
         text-align: center;
@@ -890,5 +900,12 @@ form [type="submit"]:hover, [type="reset"]:hover{
     .card_tienda img{
         width: 240px;
         object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .frame-dir{
+        width: 220px;
+        height: 150px;
     }
 }
