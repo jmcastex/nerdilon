@@ -901,11 +901,18 @@ form [type="submit"]:hover, [type="reset"]:hover{
         width: 240px;
         object-fit: cover;
     }
+
+    .section-footer li i{
+        font-size: 27px;
+    }
 }
 
 @media screen and (max-width: 400px) {
     .frame-dir{
         width: 220px;
         height: 150px;
+    }
+    .section-footer li i{
+        font-size: 20px;
     }
 }
