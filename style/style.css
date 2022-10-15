@@ -592,14 +592,88 @@ form [type="submit"]:hover, [type="reset"]:hover{
     cursor: pointer;
 }
 
-.sobreNerdilon{
+#sobreNerdilon{
     font-size: 40px;
 }
 
-.especialidad{
+#especialidad{
     font-size: 25px;
+    padding: 10px;
+    margin-bottom: 20px;
     color: var(--texto-light-pri);
     background-color: var(--fondo-light-pri);
+}
+
+/* #imgNosotros{
+    max-width: 100%;
+} */
+
+@media screen and (max-width: 600px){
+    .banner .banner-texto{
+        padding-top: 20px;
+    }
+
+    .banner .banner-texto h1{
+        font-size: 2.5rem;
+    }
+
+    .banner img{
+        margin-bottom: -70px;
+    }
+
+    #sobreNerdilon{
+        font-size: 2rem;
+    }
+    
+    #especialidad{
+        font-size: 1rem;
+    }
+    #imgNosotros{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 499px){
+    .banner .banner-texto h1{
+        font-size: 2rem;
+    }
+    #sobreNerdilon{
+        font-size: 1.5rem;
+    }
+    
+    #especialidad{
+        font-size: 0.75rem;
+    }
+    #imgNosotros{
+        height: 250px;
+    }
+}
+@media screen and (max-width: 390px){
+    .banner .banner-texto h1{
+        font-size: 1.5rem;
+    }
+
+    #sobreNerdilon{
+        font-size: 1rem;
+    }
+
+    #imgNosotros{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 270px){
+    .banner .banner-texto{
+        padding-top: 0px;
+    }
+
+    .banner .banner-texto h1{
+        font-size: 1.3rem;
+    }
+
+    #sobreNerdilon{
+        font-size: 0.7rem;
+    }
 }
 
 .consulta{
