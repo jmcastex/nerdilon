@@ -228,7 +228,7 @@ body{
                     }
 
 
-                /*----------------------------------------FOOTER----------------------------------------------------------*/    
+    /*----------------------------------------FOOTER----------------------------------------------------------*/    
 
 
         .footer{
@@ -255,123 +255,7 @@ body{
                 color: var(--texto-light-ter);
             }
 
-
-                /*----------------------------------------MEDIA QUERIES-----------------------------------------------------*/
-
-
-
-
-
-
-@media only screen and (max-width: 1172px) {
-    .portada{
-        width: 100%;
-        
-    }
-}
-
-
-
-@media screen and (max-width: 860px) {
-    .header__button {
-        display: block;
-        }
-    .header__nav {
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        opacity: 0;
-        height: 0vh;
-        overflow: hidden;
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        }
-    .header__nav--activo {
-        opacity: 1;
-        height: 50vh;
-        }
-        .header__ul {
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            }
-            .header__li {
-                margin: 1em 0;
-                }
-    .filtro{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-            
-        .portada__texto h1{
-            padding-left: 0;
-            font-size: 2rem;
-            text-align: center;
-        }
-            
-        .portada__texto {
-            text-align: center;
-        }
-            
-    .destacados_titulo{
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 574px) and (min-width: 481px){
-    .header{
-        justify-content: center;    
-    }
-
-    .header__ul{
-        margin-top: 20px;
-    }
-
-    .filtro{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        
-
-    }
-
-    .portada__texto h1{
-        padding-left: 0;
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .portada__texto {
-        text-align: center;
-    }
-
-    .destacados_titulo{
-        font-size: 1.4rem;
-    }
-
-
-}
-
-
-
-                /*----------------------------------------FIN PAGINA INDEX-------------------------------------*/
+    /*----------------------------------------FIN PAGINA INDEX-------------------------------------*/
 
 
 
@@ -467,28 +351,12 @@ body{
     color: var(--texto-light-ter);
 }
 
-@media screen and (min-width: 1200px){
-    .banner img{
-        height: 500px;
-        object-position: 0 70%;
-    }
-}
-
 .login .contenedor-login{
     display: flex;
 }
 
 .register .contenedor-register{
     display: flex;
-}
-
-@keyframes rotar{
-    0%{
-        transform: scale(0%, 0%);
-    }
-    100%{
-        transform: scale(100%, 100%);
-    }
 }
 
 div.contenedor-register, .contenedor-login{
@@ -543,7 +411,7 @@ nav ul li button{
     font-family: 'Montserrat', sans-serif;
     background-color: var(--fondo-light-pri);
     color: var(--texto-light-pri);
-    font-size: .8rem;
+    font-size: 0.8rem;
     border: none;
     font-weight: bold;
 
@@ -593,87 +461,15 @@ form [type="submit"]:hover, [type="reset"]:hover{
 }
 
 #sobreNerdilon{
-    font-size: 40px;
+    font-size: 2rem;
 }
 
 #especialidad{
-    font-size: 25px;
+    font-size: 1.5rem;
     padding: 10px;
     margin-bottom: 20px;
     color: var(--texto-light-pri);
     background-color: var(--fondo-light-pri);
-}
-
-/* #imgNosotros{
-    max-width: 100%;
-} */
-
-@media screen and (max-width: 600px){
-    .banner .banner-texto{
-        padding-top: 20px;
-    }
-
-    .banner .banner-texto h1{
-        font-size: 2.5rem;
-    }
-
-    .banner img{
-        margin-bottom: -70px;
-    }
-
-    #sobreNerdilon{
-        font-size: 2rem;
-    }
-    
-    #especialidad{
-        font-size: 1rem;
-    }
-    #imgNosotros{
-        height: 300px;
-    }
-}
-
-@media screen and (max-width: 499px){
-    .banner .banner-texto h1{
-        font-size: 2rem;
-    }
-    #sobreNerdilon{
-        font-size: 1.5rem;
-    }
-    
-    #especialidad{
-        font-size: 0.75rem;
-    }
-    #imgNosotros{
-        height: 250px;
-    }
-}
-@media screen and (max-width: 390px){
-    .banner .banner-texto h1{
-        font-size: 1.5rem;
-    }
-
-    #sobreNerdilon{
-        font-size: 1rem;
-    }
-
-    #imgNosotros{
-        height: 100%;
-    }
-}
-
-@media screen and (max-width: 270px){
-    .banner .banner-texto{
-        padding-top: 0px;
-    }
-
-    .banner .banner-texto h1{
-        font-size: 1.3rem;
-    }
-
-    #sobreNerdilon{
-        font-size: 0.7rem;
-    }
 }
 
 .consulta{
@@ -817,21 +613,6 @@ form [type="submit"]:hover, [type="reset"]:hover{
     animation: animar 5s linear infinite;
 }
 
-@keyframes animar {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
-
-
-
-
 /*------------------------------------------------tienda---------------------------------------------------------------------*/
 
 
@@ -933,7 +714,81 @@ form [type="submit"]:hover, [type="reset"]:hover{
     text-align: center;
 }
 
+/*----------------------------------------MEDIA QUERIES-----------------------------------------------------*/
+@media screen and (min-width: 1200px){
+    .banner img{
+        height: 500px;
+        object-position: 0 70%;
+    }
+}
+
+@media only screen and (max-width: 1172px) {
+    .portada{
+        width: 100%;
+        
+    }
+}
+
 @media screen and (max-width: 860px) {
+    .header__button {
+        display: block;
+        }
+    .header__nav {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        opacity: 0;
+        height: 0vh;
+        overflow: hidden;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        }
+    .header__nav--activo {
+        opacity: 1;
+        height: 50vh;
+        }
+        .header__ul {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            }
+            .header__li {
+                margin: 1em 0;
+                }
+    .filtro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+            
+        .portada__texto h1{
+            padding-left: 0;
+            font-size: 2rem;
+            text-align: center;
+        }
+            
+        .portada__texto {
+            text-align: center;
+        }
+            
+    .destacados_titulo{
+        font-size: 1.2rem;
+    }
+
     .botones{
         margin-left: 0;
         margin-top: 30px;
@@ -981,12 +836,131 @@ form [type="submit"]:hover, [type="reset"]:hover{
     }
 }
 
+@media screen and (max-width: 600px){
+    .banner .banner-texto{
+        padding-top: 20px;
+    }
+
+    .banner .banner-texto h1{
+        font-size: 2.5rem;
+    }
+
+    .banner img{
+        margin-bottom: -70px;
+    }
+    
+    #especialidad{
+        font-size: 1rem;
+    }
+    #imgNosotros{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 574px) and (min-width: 481px){
+    .header{
+        justify-content: center;    
+    }
+
+    .header__ul{
+        margin-top: 20px;
+    }
+
+    .filtro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+
+    }
+
+    .portada__texto h1{
+        padding-left: 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .portada__texto {
+        text-align: center;
+    }
+
+    .destacados_titulo{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .banner .banner-texto h1{
+        font-size: 2rem;
+    }
+    #sobreNerdilon{
+        font-size: 1.5rem;
+    }
+    
+    #especialidad{
+        font-size: 0.75rem;
+    }
+    #imgNosotros{
+        height: 250px;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .frame-dir{
         width: 220px;
         height: 150px;
     }
+    
     .section-footer li i{
         font-size: 20px;
+    }
+
+    .banner .banner-texto h1{
+        font-size: 1.5rem;
+    }
+
+    #sobreNerdilon{
+        font-size: 1rem;
+    }
+
+    #imgNosotros{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 270px){
+    .banner .banner-texto{
+        padding-top: 0px;
+    }
+
+    .banner .banner-texto h1{
+        font-size: 1.3rem;
+    }
+
+    #sobreNerdilon{
+        font-size: 0.7rem;
+    }
+}
+
+/*----------------------------------------KEY FRAMES-----------------------------------------------------*/
+
+@keyframes rotar{
+    0%{
+        transform: scale(0%, 0%);
+    }
+    100%{
+        transform: scale(100%, 100%);
+    }
+}
+
+@keyframes animar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
