@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    
+
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script defer src="../js/header.js"></script>
     <script defer src="../js/main.js"></script>
@@ -25,7 +25,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body onload="primeraCarga()">
+<body onload="">
 
     <div class="padre__tienda">
         <header class="header">
@@ -125,38 +125,47 @@
             </button>
 
 
-            <div class="container_Tienda">
+            <div class="container_Tienda" id="productosTienda">
 
                 <section class="categorias">
                     <h2>Categorias</h2>
                     <ul>
                         <li>
-                            <label onclick="filtrar()" for="tazas"><input type="checkbox" name="" id="tazas"
-                                    checked> Tazas</label>
+                            <label @click="filtro()" for="tazas"><input type="checkbox" name="" id="tazas" v-model="taza" checked>
+                                Tazas</label>
                         </li>
                         <li>
-                            <label onclick="filtrar()" for="remeras"><input type="checkbox" name="" id="remeras"
-                                    checked> Remeras</label>
+                            <label @click="filtro()" for="remeras"><input type="checkbox" name="" id="remeras" v-model="remera" checked>
+                                Remeras</label>
                         </li>
                         <li>
-                            <label onclick="filtrar()" for="llaveros"><input type="checkbox" name="" id="llaveros"
+                            <label @click="filtro()" for="llaveros"><input type="checkbox" name="" id="llaveros" v-model="llavero"
                                     checked> Llaveros</label>
                         </li>
                         <li>
-                            <label onclick="filtrar()" for="mousepads"><input type="checkbox" name="" id="mousepads"
+                            <label @click="filtro()" for="mousepads"><input type="checkbox" name="" id="mousepads" v-model="mousepad"
                                     checked> Mouse Pads</label>
                         </li>
                         <li>
-                            <label onclick="filtrar()" for="muniecos"><input type="checkbox" name="" id="muniecos"
+                            <label @click="filtro()" for="muniecos"><input type="checkbox" name="" id="muniecos" v-model="munieco"
                                     checked> Muñecos</label>
                         </li>
                     </ul>
                 </section>
 
-                <section class="productosTienda" id="productosTienda">
-
-                    <h2>Cargando...</h2>
-
+                <section >
+                    <h2 v-if="cargando">Cargando...</h2>
+                    <div v-else-if="!cargando">
+                        <div v-for="(tipo, i) in filtrado">
+                            <div v-for="prod in tipo "class="productosTienda">
+                                <div class="card_tienda">
+                                    <img :src="prod.imagen" :alt="prod.nombre">
+                                    <h4>{{prod.nombre}}</h4>
+                                    <p>{{prod.precio}}</p>
+                                    <a href="#">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
                 </section>
 
             </div>
