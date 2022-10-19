@@ -650,6 +650,7 @@ form [type="submit"]:hover, [type="reset"]:hover{
     width: 85%;
     display: flex;
     flex-wrap: wrap;
+    border-bottom: 1px solid white;
 }
 
 .card_tienda{
