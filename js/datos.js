@@ -1,57 +1,35 @@
-let urldatos = ""
-urldatos = "../resources/data/productos.json"; //direccion local
-urldatos = "https://raw.githubusercontent.com/jmcastex/nerdilon/master/resources/data/productos.json"
-
-let filtros = {
-    tazas: document.getElementById("tazas"),
-    remeras: document.getElementById("remeras"),
-    llaveros: document.getElementById("llaveros"),
-    muniecos: document.getElementById("muniecos"),
-    mousepads: document.getElementById("mousepads"),
-    ninguna() {
-        return this.tazas || this.remeras || this.llaveros || this.muniecos || this.mousepads;
-    }
-}
-
-let productos = {
-    datos: {},
-    cargando: true,
-    urlData: "https://raw.githubusercontent.com/jmcastex/nerdilon/master/resources/data/productos.json",
-    leerDatos() {
-        fetch(this.urlData)
-            .then(res => res.json())
-            .then(data => {
-                this.datos=data
-                this.cargando=false
-                filtrar()
-            })
-    }
-}
-
-function filtrar(){
-    let cadena = "";
-    for (let tipo in productos.datos) {
-        if (!filtros[tipo].checked){
-        //    continue;
-        }else{
-            for (let prod of productos.datos[tipo]) {
-                cadena += `
-                <div class="card_tienda">
-                <img src="${prod.imagen}" alt="${prod.nombre}">
-                <h4>${prod.nombre}</h4>
-                <p>$${prod.precio}</p>
-                <a href="#">Agregar al carrito</a>
-                </div>
-                `
-            }
+createApp({
+    data() {
+        return {
+            info: {},
+            filtrados: [],
+            cargando: true,
+            urlData: "https://raw.githubusercontent.com/jmcastex/nerdilon/master/resources/data/productos.json",
+            filtros:["tazas", "remeras", "llaveros", "mousepads", "muniecos"],
+        }
+    },
+    created() {
+        this.leerDatos(this.urlData)
+    },
+    methods: {
+        construccion(){
+            alert("Seccion en Reparacion. Disculpe las molestias!")
+        },
+        leerDatos(url) {
+            fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    this.info = data
+                    this.filtro()
+                })
+        },
+        filtro(){
+            this.filtrados=[]
+            if (this.filtros.includes("tazas")) this.filtrados = this.filtrados.concat(this.info.tazas)
+            if (this.filtros.includes("remeras")) this.filtrados = this.filtrados.concat(this.info.remeras)
+            if (this.filtros.includes("llaveros")) this.filtrados = this.filtrados.concat(this.info.llaveros)
+            if (this.filtros.includes("mousepads")) this.filtrados = this.filtrados.concat(this.info.mousepads)
+            if (this.filtros.includes("muniecos")) this.filtrados = this.filtrados.concat(this.info.muniecos)
         }
     }
-    if (cadena===""){
-        cadena="<h2>Seleccione una Categoria</h2>"
-    }
-    document.getElementById("productosTienda").innerHTML = cadena
-}
-
-function primeraCarga(){
-    productos.leerDatos()
-}
+}).mount('#productosTienda')
